@@ -78,7 +78,7 @@ nav .logo {
 }
 
 .home {
-    background-image: url("https://images.unsplash.com/photo-1560767098-51c34e3f695d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-image: url("../img/bg.jpg");
     min-height: 90vh;
     padding-top: 11vh;
     display: flex;
@@ -144,7 +144,7 @@ nav .logo {
 }
 
 #events {
-    background-image: url("https://images.unsplash.com/photo-1425036458755-dc303a604201?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1271&q=80");
+    background-image: url("../img/bg1.jpg");
     background-size: cover;
     color: white;
 }
@@ -228,7 +228,7 @@ nav .logo {
 }
 
 #schedule {
-    background-image: url("https://images.unsplash.com/photo-1577807484129-c10317c31739?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-image: url("../img/bg2.jpg");
     background-size: cover;
     color: white;
 }
@@ -439,6 +439,12 @@ footer .fa-envelope {
 }
 .burger.active .line3 {
     transform: rotate(-45deg) translate(5px,-5px);
+}
+
+@media only screen and (max-width : 300px) {
+    nav .logo {
+        font-size: 10px;
+    }
 }
 
 @keyframes navSlide {

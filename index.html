@@ -7,12 +7,44 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sanganak Vimarsh</title>
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/Muli.css" rel="stylesheet">
+    <link href="css/Teko.css" rel="stylesheet">
+    <link href="css/Poppins.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!--Custom css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('#about .image').css({opacity: 0});
+
+            $('#about .image').waypoint(function() {
+                $('#about .image').addClass('animated fadeIn');
+            }, { offset: '50%' });
+
+            $('.st').waypoint(function() {
+                $('.st').addClass('animated bounce');
+            }, { offset: '50%' });
+
+            $('#expandedImg').css({opacity: 0});
+
+            $('#expandedImg').waypoint(function() {
+                $('#expandedImg').addClass('animated fadeIn');
+            }, { offset: '90%' });
+
+            $('.logo').waypoint(function() {
+                $('.logo').addClass('animated fadeIn');
+            }, { offset: '90%' });
+
+            $('.social div').waypoint(function() {
+                $('.social div').addClass('animated bounce');
+            }, { offset: '90%' });
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -47,26 +79,26 @@
     </nav>
     <div class="home">
         <div>
-            <div class="mainHeading">SANGANAK VIMARSH</div>
+            <div class="mainHeading animated fadeIn">SANGANAK VIMARSH</div>
             <br>
-            <div class="mainHeading">संगणक-विमर्श</div>
+            <div class="mainHeading animated fadeIn slow">संगणक-विमर्श</div>
         </div>
-        <div class="subHeading"><span style="color: hotpink;">March 5-6,2020,</span>ARSDC</div>
-        <div class="time">
+        <div class="subHeading animated fadeIn slower"><span style="color: hotpink;">March 5-6,2020,</span>ARSDC</div>
+        <div class="time animated fadeIn slower">
             <div class="timec">
-                <div class="timevalue" id="days"></div>
+                <div class="timevalue" id="days">00</div>
                 <div class="timeparam">DAYS</div>
             </div>
             <div class="timec">
-                <div class="timevalue" id="hours"></div>
+                <div class="timevalue" id="hours">00</div>
                 <div class="timeparam">HOURS</div>
             </div>
             <div class="timec">
-                <div class="timevalue" id="minutes"></div>
+                <div class="timevalue" id="minutes">00</div>
                 <div class="timeparam">MINUTES</div>
             </div>
             <div class="timec">
-                <div class="timevalue" id="seconds"></div>
+                <div class="timevalue" id="seconds">00</div>
                 <div class="timeparam">SECONDS</div>
             </div>
         </div>
@@ -121,7 +153,7 @@
                 <span class="circle"></span>
                 <span class="circle"></span>
             </div>
-            <div class="h">Events</div>
+            <div class="h" data-aos="fade-right">Events</div>
         </div>
         <br>
         <br>
@@ -129,6 +161,10 @@
             <li class="imgc" onclick="expandImage(this);">
                 <img src="img/portfolio-1.jpg" alt="Love Querying? Query a Database.<br/> Explore your Data retrieving ability with a quick test on SQL and Database awareness, also practical implementation and runnung of various queries in SQL.">
                 <div class="imgtext">DIG-D-DATA</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/user_interface1.jpg" alt="Show the best of your skills to build the best user interface. Themes would be given on the spot">
+                <div class="imgtext">BEST USER INTERFACE</div>
             </li>
             <li class="imgc" onclick="expandImage(this);">
                 <img src="img/portfolio-2.jpg" alt="Test your IQ with MCQ based event on coding languages(C/C++/Java) and decrypting the codes at different levels: Novice, Moderate and Expert!">
@@ -143,24 +179,20 @@
                 <div class="imgtext">QUEST-MANIA</div>
             </li>
             <li class="imgc" onclick="expandImage(this);">
-                <img src="img/portfolio-10.jpg" alt="If you want to take your puzzle solving knacks to the next level, try  hands at this classic sudoku game with a coercion building twist. Generate the question from the endowed clues and then solve the Sudoku!">
-                <div class="imgtext">SUDOKU</div>
+                <img src="img/coding.jpg" alt="If you want to take your puzzle solving knacks to the next level, try  hands at this classic sudoku game with a coercion building twist. Generate the question from the endowed clues and then solve the Sudoku!">
+                <div class="imgtext">Tech-Charades</div>
             </li>
             <li class="imgc" onclick="expandImage(this);">
-                <img src="img/portfolio-5.jpg" alt="Experience the adrenaline rush and thrill at games like Need For Speed Most Wanted(Black Edition), Counter Strike Go and PUBG.">
+                <img src="img/pubg.jpg" alt="Experience the adrenaline rush and thrill at games like Need For Speed Most Wanted(Black Edition), Counter Strike Go and PUBG.">
                 <div class="imgtext">LAN GAMING</div>
             </li>
             <li class="imgc" onclick="expandImage(this);">
-                <img src="img/portfolio-7.jpg" alt="Hunt like Ethan Hunt and Sherlock Holmes - to find a hacker through written clues and various hints present in college premises and the Satya Niketan Market">
+                <img src="img/treasure hunt 3.jpg" alt="Hunt like Ethan Hunt and Sherlock Holmes - to find a hacker through written clues and various hints present in college premises and the Satya Niketan Market">
                 <div class="imgtext">TREASURE HUNT</div>
             </li>
             <li class="imgc" onclick="expandImage(this);">
                 <img src="img/portfolio-11.jpg" alt="One Dream! One Team!<br>Play with money, another agitating game of IPL auction where you can find every player under the hammer. Create the strongest team appertaining of your dream 7 players. ">
                 <div class="imgtext">IPL AUCTION</div>
-            </li>
-            <li class="imgc" onclick="expandImage(this);">
-                <img src="img/portfolio-10.jpg" alt="Show the best of your skills to build the best user interface. Themes would be given on the spot">
-                <div class="imgtext">BEST USER INTERFACE</div>
             </li>
             <li class="imgc" onclick="expandImage(this);">
                 <img src="img/portfolio-8.jpg" alt="Show and fine tune your presentation and acting skills by directing and presenting an advertisement on the topic given.">
@@ -273,7 +305,7 @@
                     </div>
                     <hr>
                     <div class="scheduleItem">
-                        <h1>Dig-D-Data</h1>
+                        <h1>Tech-Charades</h1>
                         <br>
                         <p>Time: 2:00 pm <br></p>
                     </div>
@@ -286,7 +318,7 @@
                 </div>
                 <div class="schedule">
                     <div class="scheduleItem">
-                        <h1>CyberWar</h1>
+                        <h1>Dig-D-Data / Blind Coding</h1>
                         <br>
                         <p>Time: 10:00 am <br></p>
                     </div>
@@ -294,43 +326,37 @@
                     <div class="scheduleItem">
                         <h1>IPL Auction</h1>
                         <br>
-                        <p>Time: 10:40 am <br></p>
-                    </div>
-                    <hr>
-                    <div class="scheduleItem">
-                        <h1>Sudoku</h1>
-                        <br>
                         <p>Time: 10:00 am <br></p>
                     </div>
                     <hr>
                     <div class="scheduleItem">
                         <h1>Quest Mania</h1>
                         <br>
-                        <p>Time: 10:20 am <br></p>
-                    </div>
-                    <hr>
-                    <div class="scheduleItem">
-                        <h1>AD Mad</h1>
-                        <br>
-                        <p>Time: 11:20 am <br></p>
+                        <p>Time: 10:30 am <br></p>
                     </div>
                     <hr>
                     <div class="scheduleItem">
                         <h1>Treasure Hunt</h1>
                         <br>
-                        <p>Time: 11:20 am <br></p>
+                        <p>Time: 10:50 am <br></p>
                     </div>
                     <hr>
                     <div class="scheduleItem">
                         <h1>Best User Interface</h1>
                         <br>
-                        <p>Time: 11:20 am <br></p>
+                        <p>Time: 11:10 am <br></p>
                     </div>
                     <hr>
                     <div class="scheduleItem">
-                        <h1>Lan Gaming</h1>
+                        <h1>Meme War</h1>
                         <br>
-                        <p>Time: 11:20 am <br></p>
+                        <p>Time: 11:30 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Pubg Battle</h1>
+                        <br>
+                        <p>Time: 12:20 am <br></p>
                     </div>
                 </div>
             </div>
@@ -423,6 +449,6 @@
         <h5>Copyright © 2020. All Rights Reserved.</h5>
         <br>
     </footer>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
