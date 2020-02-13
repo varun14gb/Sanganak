@@ -33,7 +33,7 @@ onLink = () => {
     });
 }
 
-var countDownDate = new Date(2020, 3, 2).getTime();
+var countDownDate = new Date(2020, 02, 02).getTime();
 
 var x = setInterval(() => {
     var now = new Date().getTime();
