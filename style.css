@@ -196,6 +196,7 @@ nav .logo {
     right: 15px;
     color: rgba(255, 49, 49, 0.856);
     font-size: 35px;
+    z-index: 99;
     cursor: pointer;
   }
 
@@ -404,6 +405,9 @@ footer .fa-envelope {
     }
     .image img{
         width: 100%;
+    }
+    #imgtext {
+        font-size: 15px;
     }
 
     .day1{
