@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sanganak Vimarsh</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Sanganak Vimarsh
+        </div>
+        <div class="nav-links">
+            <li  onclick="onLink()">
+                <a href="#about">About</a>
+            </li>
+            <li onclick="onLink()">
+                <a href="#events">Events</a>
+            </li>
+            <li onclick="onLink()">
+                <a href="#summary">Summary</a>
+            </li>
+            <li onclick="onLink()">
+                <a href="#schedule">Schedule</a>
+            </li>
+            <li onclick="onLink()">
+                <a href="#contact">Contact</a>
+            </li>
+        </div>
+        <div class="regBtn">
+            <button class="rbtn">Register</button>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="home">
+        <div>
+            <div class="mainHeading">SANGANAK VIMARSH</div>
+            <br>
+            <div class="mainHeading">संगणक-विमर्श</div>
+        </div>
+        <div class="subHeading"><span style="color: hotpink;">March 5-6,2020,</span>ARSDC</div>
+        <div class="time">
+            <div class="timec">
+                <div class="timevalue" id="days"></div>
+                <div class="timeparam">DAYS</div>
+            </div>
+            <div class="timec">
+                <div class="timevalue" id="hours"></div>
+                <div class="timeparam">HOURS</div>
+            </div>
+            <div class="timec">
+                <div class="timevalue" id="minutes"></div>
+                <div class="timeparam">MINUTES</div>
+            </div>
+            <div class="timec">
+                <div class="timevalue" id="seconds"></div>
+                <div class="timeparam">SECONDS</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <div class="head">
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div class="h">About</div>
+        </div>
+        <br>
+        <br>
+        <div class="image">
+            <img src="img/logo1.png" alt="techathon logo">
+        </div>
+        <div class="para">
+            <p>
+                <br><br>
+                <br>Welcome to the annual technical fest of Atma Ram Sanatan Dharma College. And be prepared to have your
+                mind blown !!<br>
+                <br>Techathon - The Computer Science Society of ARSD College, is proud to present, "SANGANAK VIMARSH" : a
+                technical marathon.<br>
+                <br>Come and witness a series of events meant to enlighten as well as test your CS skills.<br><br>
+            </p>
+            <p>
+                <br>
+                <br>
+                <b><i>" Techathon aims at providing technical insight to students involved, as well as, the students who
+                        participate."</i></b>
+            </p>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="container" id="events">
+        <div class="head">
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div class="h">Events</div>
+        </div>
+        <br>
+        <br>
+        <div class="slider">
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-1.jpg" alt="Love Querying? Query a Database.<br/> Explore your Data retrieving ability with a quick test on SQL and Database awareness, also practical implementation and runnung of various queries in SQL.">
+                <div class="imgtext">DIG-D-DATA</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-2.jpg" alt="Test your IQ with MCQ based event on coding languages(C/C++/Java) and decrypting the codes at different levels: Novice, Moderate and Expert!">
+                <div class="imgtext">HACK-D-CODE</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-6.jpg" alt="Passwords are dirty socks. If left around they will create a stinky mess. Test your hacking skills by cracking passwords">
+                <div class="imgtext">CYBERWAR</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-4.jpg" alt="Like Trivia?  Show your general awareness quotient at a general quiz on various topics like General IT, Science, Sports, Current Affairs and Entertainment and anything you can think of!">
+                <div class="imgtext">QUEST-MANIA</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-10.jpg" alt="If you want to take your puzzle solving knacks to the next level, try  hands at this classic sudoku game with a coercion building twist. Generate the question from the endowed clues and then solve the Sudoku!">
+                <div class="imgtext">SUDOKU</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-5.jpg" alt="Experience the adrenaline rush and thrill at games like Need For Speed Most Wanted(Black Edition), Counter Strike Go and PUBG.">
+                <div class="imgtext">LAN GAMING</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-7.jpg" alt="Hunt like Ethan Hunt and Sherlock Holmes - to find a hacker through written clues and various hints present in college premises and the Satya Niketan Market">
+                <div class="imgtext">TREASURE HUNT</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-11.jpg" alt="One Dream! One Team!<br>Play with money, another agitating game of IPL auction where you can find every player under the hammer. Create the strongest team appertaining of your dream 7 players. ">
+                <div class="imgtext">IPL AUCTION</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-10.jpg" alt="Show the best of your skills to build the best user interface. Themes would be given on the spot">
+                <div class="imgtext">BEST USER INTERFACE</div>
+            </li>
+            <li class="imgc" onclick="expandImage(this);">
+                <img src="img/portfolio-8.jpg" alt="Show and fine tune your presentation and acting skills by directing and presenting an advertisement on the topic given.">
+                <div class="imgtext">AD MAD</div>
+            </li>
+        </div>
+        <div class="largeimg">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+
+            <img id="expandedImg" style="width:100%">
+
+            <div id="imgtext"></div>            
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="container" id="summary">
+        <div class="head">
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div class="h">Summary</div>
+        </div>
+        <br>
+        <br>
+        <div class="summarise">
+            <div class="summaryItem">
+                <div class="icon">
+                    📅
+                </div>
+                <div class="st" id="summaryDays">0</div>
+                <div class="sc">
+                    DAYS
+                </div>
+            </div>
+            <div class="summaryItem">
+                <div class="icon">
+                    🤼
+                </div>
+                <div class="st" id="summaryEvents">0</div>
+                <div class="sc">
+                    EVENTS
+                </div>
+            </div>
+            <div class="summaryItem">
+                <div class="icon">
+                    🎙
+                </div>
+                <div class="st" id="summarySeminars">0</div>
+                <div class="sc">
+                    SEMINARS
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="container" id="schedule">
+        <div class="head">
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div class="h">Schedule</div>
+        </div>
+        <br>
+        <br>
+        <div class="schedules">
+            <div class="day1">
+                <div class="schedulearrowc">
+                    <h1>DAY 1</h1>
+                    <h3>5th March</h3>
+                </div>
+                <div class="schedule">
+                    <div class="scheduleItem">
+                        <h1>A Randezvous with the World of Animation</h1>
+                        <br>
+                        <p>Seminar by Dr. Jagmohan Rai<br>
+                            Associate Professor, P.G.D.A.V College<br>
+                            Time: 10:00 am<br>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Internet of Things</h1>
+                        <br>
+                        <p>Seminar by Dr. D.P Vidyarthi <br>
+                            Professor, School of Computer & System Sciences, J.N.U <br>
+                            Time: 11:00 am <br>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Hack-D-Code</h1>
+                        <br>
+                        <p>Time: 1:30 pm <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Dig-D-Data</h1>
+                        <br>
+                        <p>Time: 2:00 pm <br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="day1">
+                <div class="schedulearrowc">
+                    <h1>DAY 2</h1>
+                    <h3>6th March</h3>
+                </div>
+                <div class="schedule">
+                    <div class="scheduleItem">
+                        <h1>CyberWar</h1>
+                        <br>
+                        <p>Time: 10:00 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>IPL Auction</h1>
+                        <br>
+                        <p>Time: 10:40 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Sudoku</h1>
+                        <br>
+                        <p>Time: 10:00 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Quest Mania</h1>
+                        <br>
+                        <p>Time: 10:20 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>AD Mad</h1>
+                        <br>
+                        <p>Time: 11:20 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Treasure Hunt</h1>
+                        <br>
+                        <p>Time: 11:20 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Best User Interface</h1>
+                        <br>
+                        <p>Time: 11:20 am <br></p>
+                    </div>
+                    <hr>
+                    <div class="scheduleItem">
+                        <h1>Lan Gaming</h1>
+                        <br>
+                        <p>Time: 11:20 am <br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="head">
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div class="h">Contact</div>
+        </div>
+        <br>
+        <br>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14013.134206093262!2d77.1675697!3d28.5912692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c2d506edd36b06f!2sAtma%20Ram%20Sanatan%20Dharma%20College!5e0!3m2!1sen!2sin!4v1581589966249!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <br>
+        <br>
+        <div class="summarise">
+            <div class="summaryItem">
+                <div class="icon">
+                    📍
+                </div>
+                <div class="sc">
+                    ADDRESS
+                </div>
+                <div>
+                    <p style="font-size: 14px;">ARSDC, Dhaula Kuan, New Delhi</p>
+                </div>
+            </div>
+            <div class="summaryItem">
+                <div class="icon">
+                    📧
+                </div>
+                <div class="sc">
+                    EMAIL
+                </div>
+                <div>
+                    <p style="font-size: 14px;">techathon@arsd.du.ac.in</p>
+                </div>
+            </div>
+            <div class="summaryItem">
+                <div class="icon">
+                    📞
+                </div>
+                <div class="sc">
+                    PHONE
+                </div>
+                <div>
+                    <p style="font-size: 14px;">1233456789</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="btncon">
+            <div class="bigbtnc">
+                <button class="bigbtn">Register Now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br>
+        <div class="logo">
+            Sanganak Vimarsh
+        </div>
+        <br>
+        <br>
+        <div class="social">
+            <div>
+                <a href="http://www.facebook.com/sanganakvimarsh" target="_blank" class="fa fa-facebook"></a>
+            </div>
+            <div>
+                <a href="http://www.instagram.com/sanganakvimarsh" target="_blank" class="fa fa-instagram"></a>
+            </div>
+            <div>
+                <a href="mailto:techathon@arsd.du.ac.in" target="_blank" class="fa fa-envelope"></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h5>Copyright © 2020. All Rights Reserved.</h5>
+        <br>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
