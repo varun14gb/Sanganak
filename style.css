@@ -23,7 +23,7 @@ nav {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: rgba(0, 0, 0, 0.712);
     font-family: 'Muli', sans-serif;
     color: white;
     min-height: 9vh;
@@ -179,6 +179,8 @@ nav .logo {
 .largeimg {
     position: relative;
     display: none;
+    left: 30%;
+    max-width: 500px;
 }
 #imgtext {
     position: absolute;
@@ -343,6 +345,9 @@ footer .fa-envelope {
 @media only screen and (max-width : 1024px) {
     .nav-links {
         width: 45%;
+    }
+    .largeimg {
+        left: 0%;
     }
 }
 
