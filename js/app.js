@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+    const preload = document.querySelector('.preload');
+    preload.classList.add('preload-finish');
+});
+
 navSlide = () => {
     const nav = document.querySelector(".nav-links");
     const burger = document.querySelector(".burger");
