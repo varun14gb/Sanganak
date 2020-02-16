@@ -28,8 +28,8 @@ html {
     transition: opacity 0.5s ease;
 }
 .preimage {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 300px;
     width: 70%;
     animation: rotate 5s linear infinite;
 }

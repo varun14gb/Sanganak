@@ -30,19 +30,37 @@
                 $('.st').addClass('animated bounce');
             }, { offset: '50%' });
 
-            $('#expandedImg').css({opacity: 0});
+            $('.largeimg').css({opacity: 0});
 
-            $('#expandedImg').waypoint(function() {
-                $('#expandedImg').addClass('animated fadeIn');
-            }, { offset: '90%' });
+            $('.largeimg').waypoint(function() {
+                $('.largeimg').addClass('animated fadeIn');
+            }, { offset: '60%' });
 
             $('.logo').waypoint(function() {
                 $('.logo').addClass('animated fadeIn');
             }, { offset: '90%' });
 
+            $('.slider').css({opacity: 0});
+
+            $('.slider').waypoint(function() {
+                $('.slider').addClass('animated fadeInUp');
+            }, { offset: '50%' });
+
             $('.social div').waypoint(function() {
                 $('.social div').addClass('animated bounce');
             }, { offset: '90%' });
+
+            $('.day11').css({opacity: 0});
+
+            $('.day11').waypoint(function() {
+                $('.day11').addClass('animated fadeInLeft');
+            }, { offset: '60%' });
+
+            $('.day12').css({opacity: 0});
+
+            $('.day12').waypoint(function() {
+                $('.day12').addClass('animated fadeInLeft');
+            }, { offset: '60%' });
         });
     </script>
 </head>
@@ -273,7 +291,7 @@
         <br>
         <br>
         <div class="schedules">
-            <div class="day1">
+            <div class="day1 day11">
                 <div class="schedulearrowc">
                     <h1>DAY 1</h1>
                     <h3>2nd March</h3>
@@ -310,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            <div class="day1">
+            <div class="day1 day12">
                 <div class="schedulearrowc">
                     <h1>DAY 2</h1>
                     <h3>3rd March</h3>
